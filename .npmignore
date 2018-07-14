@@ -1,0 +1,11 @@
+tsconfig.json
+src/
+.build
+.idea
+tsconfig.json
+tslint.json
+yarn.lock
+dist/coverage
+dist/docs
+*.iml
+*.config.js
