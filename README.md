@@ -8,6 +8,8 @@
 
 ## roadmap
 
-- static code analysis
-- travis
-- releases
+- docs publish
+- changelog
+- wiki/getting started
+- additional optional.methods
+- automatic release via travis
