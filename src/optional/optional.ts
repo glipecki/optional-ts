@@ -10,7 +10,7 @@ export class Optional<T> {
      * Empty optional holds null value.
      * @param <T> - stored value type
      */
-    static empty<T>(): Optional<T> {
+    public static empty<T>(): Optional<T> {
         return Optional.EMPTY;
     }
 
