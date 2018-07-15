@@ -1,6 +1,6 @@
 {
   "name": "optional-ts",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Optional implementation for TypeScript projects",
   "repository": "git@github.com:glipecki/optional.ts.git",
   "author": "Grzegorz Lipecki <grzegorz.lipecki@gmail.com>",
@@ -17,12 +17,14 @@
     "postbuild": "rimraf .build",
     "build:compile": "tsc -p src/tsconfig.lib.json",
     "build:test": "yarn test --coverage --coverageDirectory '../dist/coverage'",
+    "build:coverage": "cat dist/coverage/lcov.info | coveralls",
     "build:lint": "yarn lint",
     "build:bundle": "rollup -c rollup.config.js",
     "build:dist": "copyfiles -u 3 '.build/**/*.d.ts' dist",
     "build": "yarn build:compile && yarn build:lint && yarn build:test && yarn build:bundle && yarn docs && yarn build:dist",
     "watch": "tsc -p src/tsconfig.lib.json -w --no-emit",
-    "docs": "typedoc --out dist/docs --target es5 --theme default --mode file --tsconfig src/tsconfig.lib.json --excludePrivate --excludeProtected --exclude '**/*.spec.ts' src"
+    "docs": "typedoc --out dist/docs --target es5 --theme default --mode file --tsconfig src/tsconfig.lib.json --excludePrivate --excludeProtected --exclude '**/*.spec.ts' src",
+    "release": "yarn build && yarn build:coverage && yarn publish && git push"
   },
   "devDependencies": {
     "@types/jest": "23.1.6",
