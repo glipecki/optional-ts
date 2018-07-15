@@ -24,7 +24,7 @@
     "watch": "tsc -p src/tsconfig.lib.json -w --no-emit",
     "docs": "typedoc --out dist/docs --target es5 --theme default --mode file --tsconfig src/tsconfig.lib.json --excludePrivate --excludeProtected --exclude '**/*.spec.ts' src",
     "release:coverage": "cat dist/coverage/lcov.info | coveralls",
-    "release": "yarn build && yarn publish --minor --non-interactive && git push --tags",
+    "release": "yarn build && yarn publish --minor --non-interactive && git push && git push --tags",
     "postrelease": "yarn release:coverage "
   },
   "devDependencies": {
