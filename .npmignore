@@ -9,3 +9,4 @@ dist/coverage
 dist/docs
 *.iml
 *.config.js
+.coveralls.yml
