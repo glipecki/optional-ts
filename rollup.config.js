@@ -1,3 +1,5 @@
+import cleanup from 'rollup-plugin-cleanup';
+
 export default {
     input: './.build/tsc-out/lib/index.js',
     output: [
@@ -12,5 +14,7 @@ export default {
             format: 'esm'
         }
     ],
-    plugins: []
+    plugins: [
+        cleanup()
+    ]
 };
