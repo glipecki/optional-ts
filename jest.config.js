@@ -3,19 +3,19 @@ const {defaults} = require('jest-config');
 module.exports = {
     rootDir: 'src',
     transform: {
-        "^.+\\.ts$": "ts-jest"
+        '^.+\\.ts$': 'ts-jest'
     },
-    testRegex: ".*\\.spec\\.ts$",
+    testRegex: '.*\\.spec\\.ts$',
     moduleFileExtensions: [
-        "ts",
-        "js",
-        "jsx",
-        "json",
-        "node"
+        'ts',
+        'js',
+        'jsx',
+        'json',
+        'node'
     ],
     globals: {
-        "ts-jest": {
-            tsConfigFile: "tsconfig.spec.json"
+        'ts-jest': {
+            tsConfigFile: 'tsconfig.spec.json'
         }
     }
 };
