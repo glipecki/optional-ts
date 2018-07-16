@@ -158,3 +158,22 @@ describe('Optional.orElseGet', () => {
     })
 
 });
+
+describe('Optional.ifPresent', () => {
+
+    it('should call callback with value if present', () => {
+        const expectedValue = 'expectedValue';
+        let callbackValue;
+
+        Optional.of(expectedValue).ifPresent(v => callbackValue = v);
+
+        expect(callbackValue).toBe(expectedValue);
+    });
+
+    it('should not call callback if value not present', () => {
+        Optional.of(null).ifPresent(v => {
+            throw new Error('should not call callback!')
+        });
+    });
+
+});
