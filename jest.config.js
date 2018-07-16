@@ -1,5 +1,3 @@
-const {defaults} = require('jest-config');
-
 module.exports = {
     rootDir: 'src',
     transform: {
