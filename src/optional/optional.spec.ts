@@ -155,7 +155,7 @@ describe('Optional.orElseGet', () => {
         Optional.of(10).orElseGet(() => ++supplierCalls);
 
         expect(supplierCalls).toBe(0);
-    })
+    });
 
 });
 
