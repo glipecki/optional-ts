@@ -4,6 +4,8 @@
 [![Coverage Status](https://coveralls.io/repos/github/glipecki/optional-ts/badge.svg?branch=master)](https://coveralls.io/github/glipecki/optional-ts?branch=master)
 [![Build Status](https://travis-ci.org/glipecki/optional-ts.svg?branch=master)](https://travis-ci.org/glipecki/optional-ts)
 [![Greenkeeper badge](https://badges.greenkeeper.io/glipecki/optional-ts.svg)](https://greenkeeper.io/)
+[![BCH compliance](https://bettercodehub.com/edge/badge/glipecki/optional-ts?branch=master)](https://bettercodehub.com/)
+[![Known Vulnerabilities](https://snyk.io/test/github/glipecki/optional-ts/badge.svg)](https://snyk.io/test/github/glipecki/optional-ts)
 [![npm](https://img.shields.io/npm/v/optional-ts.svg)](https://www.npmjs.com/package/optional-ts)
 
 ## roadmap
