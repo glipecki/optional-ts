@@ -149,4 +149,12 @@ describe('Optional.orElseGet', () => {
         expect(Optional.of(null).orElseGet(() => otherValue)).toBe(otherValue);
     });
 
+    it('should not call supplier when value provided', () => {
+        let supplierCalls = 0;
+
+        Optional.of(10).orElseGet(() => ++supplierCalls);
+
+        expect(supplierCalls).toBe(0);
+    })
+
 });
