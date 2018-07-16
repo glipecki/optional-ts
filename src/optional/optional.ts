@@ -27,23 +27,39 @@ export class Optional<T> {
         }
     }
 
+    /**
+     * Instance of Optional for null|undefined.
+     * All empty optionals should be same instance.
+     */
     private static readonly EMPTY = new Optional(null);
 
     private constructor(private value: T) {
     }
 
+    /**
+     * Checks if stored value exists.
+     * Returns falls for null and undefined value.
+     * @return if optional contains non-null value
+     */
     public isPresent(): boolean {
         return this.value !== undefined && this.value !== null;
     }
 
+    /**
+     * Gets stored value without additional checks.
+     * Will return null if no value stored.
+     * @return value if stored, null otherwise
+     */
     public get(): T {
-        if (this.isPresent()) {
-            return this.value;
-        } else {
-            return null;
-        }
+        return this.orElse(null);
     }
 
+    /**
+     * Maps stored value using passed mapping function.
+     * Will return raw mapper result.
+     * @param mapper function mapping value to result
+     * @return raw value mapper result
+     */
     public flatMap<M>(mapper: (value: T) => M): M {
         if (this.isPresent()) {
             return mapper(this.value);
@@ -52,14 +68,30 @@ export class Optional<T> {
         }
     }
 
+    /**
+     * Maps stored value using mapping function.
+     * Will return optional with mapper result.
+     * @param mapper function mapping value to result
+     * @return optional of value mapper result
+     */
     public map<M>(mapper: (value: T) => M): Optional<M> {
         return Optional.of(this.flatMap(mapper));
     }
 
+    /**
+     * Gets stored value or provided if optional is empty.
+     * @param other default value if optional is empty
+     * @return stored value if non-null, provided otherwise
+     */
     public orElse(other: T): T {
         return this.orElseGet(() => other);
     }
 
+    /**
+     * Gets stored value or supplier result if optional is empty.
+     * @param supplier default value supplier if optional is empty
+     * @return stored value if non-null, supplier result otherwise
+     */
     public orElseGet(supplier: () => T): T {
         if (this.isPresent()) {
             return this.value;
@@ -68,11 +100,14 @@ export class Optional<T> {
         }
     }
 
+    /**
+     * Gets object string representation.
+     * @return string representation
+     */
     public toString(): string {
-        const optionalOf = what => `Optional[${what}]`;
         return this
-            .map(value => optionalOf('value=' + value))
-            .orElse(optionalOf('empty'));
+            .map(value => `Optional[value=${value}]`)
+            .orElse(`Optional[empty]`);
     }
 
 }

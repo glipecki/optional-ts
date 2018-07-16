@@ -10,7 +10,8 @@
       "single"
     ],
     "arrow-parens": false,
-    "interface-name": [true, "never-prefix"]
+    "interface-name": [true, "never-prefix"],
+    "completed-docs": true
   },
   "rulesDirectory": []
 }
