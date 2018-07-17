@@ -46,9 +46,9 @@
   version "9.12.2"
   resolved "https://registry.yarnpkg.com/@types/highlight.js/-/highlight.js-9.12.2.tgz#6ee7cd395effe5ec80b515d3ff1699068cd0cd1d"
 
-"@types/jest@23.1.6":
-  version "23.1.6"
-  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-23.1.6.tgz#11c88f738f5b57d1a9dd4970c576a6639b8f0f37"
+"@types/jest@23.3.0":
+  version "23.3.0"
+  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-23.3.0.tgz#5dd70033b616a6228042244ebd992f6426808810"
 
 "@types/lodash@4.14.104":
   version "4.14.104"
@@ -2945,9 +2945,9 @@ rollup-pluginutils@^2.3.0:
     estree-walker "^0.5.2"
     micromatch "^2.3.11"
 
-rollup@0.62.0:
-  version "0.62.0"
-  resolved "https://registry.yarnpkg.com/rollup/-/rollup-0.62.0.tgz#4ca8b3c9582195dc9341ff8a1375f58319b95bfc"
+rollup@0.63.0:
+  version "0.63.0"
+  resolved "https://registry.yarnpkg.com/rollup/-/rollup-0.63.0.tgz#dfa8dc55df9a6660aff75a21547c63e5c7b9b9d5"
   dependencies:
     "@types/estree" "0.0.39"
     "@types/node" "*"
