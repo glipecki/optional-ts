@@ -110,4 +110,15 @@ export class Optional<T> {
             .orElse(`Optional[empty]`);
     }
 
+    /**
+     * Calls consumer with stored value if present.
+     * Will not call consumer if value is empty.
+     * @param consumer
+     */
+    public ifPresent(consumer: (value: T) => void): void {
+        if (this.value) {
+            consumer(this.value);
+        }
+    }
+
 }
