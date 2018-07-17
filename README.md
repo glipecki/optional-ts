@@ -7,11 +7,3 @@
 [![BCH compliance](https://bettercodehub.com/edge/badge/glipecki/optional-ts?branch=master)](https://bettercodehub.com/results/glipecki/optional-ts)
 [![Known Vulnerabilities](https://snyk.io/test/github/glipecki/optional-ts/badge.svg)](https://snyk.io/test/github/glipecki/optional-ts)
 [![npm](https://img.shields.io/npm/v/optional-ts.svg)](https://www.npmjs.com/package/optional-ts)
-
-## roadmap
-
-- docs publish
-- changelog
-- wiki/getting started
-- additional optional.methods
-- automatic release via travis
