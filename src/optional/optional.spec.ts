@@ -176,4 +176,13 @@ describe('Optional.ifPresent', () => {
         });
     });
 
+    it('should treat false as present value', () => {
+        const expectedValue = false;
+        let callbackValue;
+
+        Optional.of(expectedValue).ifPresent(value => callbackValue = value);
+
+        expect(callbackValue).toBe(expectedValue);
+    });
+
 });
