@@ -183,6 +183,6 @@ describe('Optional.ifPresent', () => {
         Optional.of(expectedValue).ifPresent(value => callbackValue = value);
 
         expect(callbackValue).toBe(expectedValue);
-    })
+    });
 
 });
