@@ -1,6 +1,6 @@
 {
   "name": "optional-ts",
-  "version": "0.7.0",
+  "version": "0.8.0",
   "description": "Optional implementation for TypeScript projects",
   "repository": "git@github.com:glipecki/optional.ts.git",
   "author": "Grzegorz Lipecki <grzegorz.lipecki@gmail.com>",
