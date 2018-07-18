@@ -116,7 +116,7 @@ export class Optional<T> {
      * @param consumer
      */
     public ifPresent(consumer: (value: T) => void): void {
-        if (this.value) {
+        if (this.isPresent()) {
             consumer(this.value);
         }
     }
