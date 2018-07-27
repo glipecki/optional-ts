@@ -1,5 +1,5 @@
 {
-  "name": "@glipecki/optional-ts",
+  "name": "@glipecki/optional",
   "version": "0.9.0",
   "description": "Optional implementation for TypeScript projects",
   "repository": "git@github.com:glipecki/optional.ts.git",
