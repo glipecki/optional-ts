@@ -6,4 +6,3 @@
 [![Greenkeeper badge](https://badges.greenkeeper.io/glipecki/optional-ts.svg)](https://greenkeeper.io/)
 [![BCH compliance](https://bettercodehub.com/edge/badge/glipecki/optional-ts?branch=master)](https://bettercodehub.com/results/glipecki/optional-ts)
 [![Known Vulnerabilities](https://snyk.io/test/github/glipecki/optional-ts/badge.svg)](https://snyk.io/test/github/glipecki/optional-ts)
-[![npm](https://img.shields.io/npm/v/@glipecki/optional.svg)](https://www.npmjs.com/package/@glipecki/optional)
