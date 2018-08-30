@@ -64,6 +64,7 @@ export class Optional<T> {
         if (this.isPresent()) {
             return mapper(this.value);
         } else {
+            // FIXME: return empty()
             return null;
         }
     }
