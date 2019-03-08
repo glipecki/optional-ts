@@ -27,7 +27,7 @@
     "release": "yarn build && yarn publish --minor --non-interactive --access public && git push && git push --tags"
   },
   "devDependencies": {
-    "@types/jest": "24.0.9",
+    "@types/jest": "24.0.10",
     "concurrently": "4.1.0",
     "copyfiles": "2.1.0",
     "coveralls": "3.0.3",
