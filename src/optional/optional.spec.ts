@@ -172,7 +172,7 @@ describe('Optional.ifPresent', () => {
 
     it('should not call callback if value not present', () => {
         Optional.of(null).ifPresent(v => {
-            throw new Error('should not call callback!')
+            throw new Error('should not call callback!');
         });
     });
 
