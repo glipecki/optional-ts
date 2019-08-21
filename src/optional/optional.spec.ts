@@ -186,3 +186,25 @@ describe('Optional.ifPresent', () => {
     });
 
 });
+
+describe('Optional.orThrow', () => {
+
+    it('should return value if present', () => {
+        const value = 'abc';
+
+        const result = Optional.of(value).orThrow(() => new Error());
+
+        expect(result).toBe(value);
+    });
+
+    it('should throw supplier result when value is empty', () => {
+        const errorMessage = 'test error message';
+        try {
+            Optional.of(undefined).orThrow(() => new Error(errorMessage));
+            fail('Should throw exception before');
+        } catch (error) {
+            expect(error.message).toBe(errorMessage);
+        }
+    });
+
+});
